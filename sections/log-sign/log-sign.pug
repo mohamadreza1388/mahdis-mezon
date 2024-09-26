@@ -1,0 +1,61 @@
+html
+    head
+        title ثبت نام | ورود
+        meta(charset="UTF-8")
+        link(rel="icon" type="image/png" href="../../images/dress (10).png" sizes="30x30")
+        link(rel="stylesheet" href="../../css/normalize.css")
+        link(rel="stylesheet" href="../../css/fontawesome.min.css")
+        link(rel="stylesheet" href="../../css/solid.css")
+        link(rel="stylesheet" href="../../css/brands.css")
+        link(rel="stylesheet" href="../../node_modules/bxslider/dist/jquery.bxslider.min.css")
+        link(rel="stylesheet" href="../../node_modules/slick-carousel/slick/slick.css")
+        link(rel="stylesheet" href="../../node_modules/slick-carousel/slick/slick-theme.css")
+        link(rel="stylesheet" href="../../node_modules/video.js/dist/video-js.min.css")
+        link(rel="stylesheet" href="../../css/style.css")
+        link(rel="stylesheet" href="css/style.css")
+        link(rel="stylesheet" href="../../css/responsive.css")
+    body
+        include ../header
+        section#form
+            .container
+                div.right
+                    strong عضویت
+                    form(method="post" action="#")
+
+                        label(for="user-name") نام کاربری
+                            span.red-text *
+                        input(type="text" name="user-name" id="user-name" class="form-control" minlength="5" maxlength="256" required)
+
+                        label(for="user-email") ایمیل
+                            span.red-text *
+                        input(type="email" name="user-email" id="user-email" class="form-control" required)
+
+                        label(for="user-password") گذرواژه
+                            span.red-text *
+                        div.inp-box
+                            i.fa-solid.fa-eye-slash
+                            input(type="password" name="user-password" id="user-password" class="form-control" minlength="8" maxlength="256" required)
+                        p اطلاعات شخصی شما برای پردازش سفارش شما استفاده می‌شود، و پشتیبانی از تجربه شما در این وبسایت، و برای اهداف دیگری که در سیاست حفظ حریم خصوصی توضیح داده شده است.
+                        input(type="submit" value="عضویت")
+                div.left
+                    strong ورود
+                    form(method="post" action="#")
+                        label(for="user-id") نام کاربری یا آدرس ایمیل
+                            span.red-text *
+                        input(type="text" name="user-id" id="user-id" class="form-control" required)
+
+                        label(for="user-password") گذرواژه
+                            span.red-text *
+                        div.inp-box
+                            i.fa-solid.fa-eye-slash
+                            input(type="password" name="user-password2" id="user-password2" class="form-control" minlength="8" maxlength="256" required)
+                        br
+                        a(href="").forgot-pas گذرواژه خود را فراموش کرده اید؟
+                        br
+                        input(type="submit" value="ورود")
+        include ../footer
+        script(src="../../node_modules/jquery/dist/jquery.min.js")
+        script(src="../../node_modules/bxslider/dist/jquery.bxslider.min.js")
+        script(src="../../node_modules/slick-carousel/slick/slick.min.js")
+        script(src="../../node_modules/video.js/dist/video.min.js")
+        script(src="../../script/index.js")

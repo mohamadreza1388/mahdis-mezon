@@ -1,0 +1,106 @@
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+#form {
+  min-height: 100px;
+  padding: 80px 0;
+  margin-bottom: 50px;
+}
+#form .container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#form .container .right,
+#form .container .left {
+  flex-basis: 50%;
+}
+#form .container .right strong,
+#form .container .left strong {
+  margin-bottom: 25px;
+  display: block;
+}
+#form .container .right form,
+#form .container .left form {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  height: 400px !important;
+  min-height: 100px;
+}
+#form .container .right form label,
+#form .container .left form label {
+  display: block;
+  font-size: 15px;
+  margin: 20px 0 10px;
+}
+#form .container .right form .form-control,
+#form .container .left form .form-control {
+  background-color: white;
+  border: 0;
+  padding: 10px 8px;
+  border-radius: 10px;
+  width: 100%;
+}
+#form .container .right form .form-control:focus,
+#form .container .left form .form-control:focus {
+  outline: 2px solid #008031;
+}
+#form .container .right form .form-control:valid,
+#form .container .left form .form-control:valid {
+  background-color: lightgreen;
+  background-image: url("../images/check_5610944.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 5px center;
+}
+#form .container .right form p,
+#form .container .left form p {
+  line-height: 2;
+  color: gray;
+  font-size: 14px;
+}
+#form .container .right form input[type=submit],
+#form .container .left form input[type=submit] {
+  padding: 10px 20px;
+  background-color: #008031;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+#form .container .right form input[type=submit]:hover,
+#form .container .left form input[type=submit]:hover {
+  background-color: #3d3d3d;
+}
+#form .container .right form .inp-box,
+#form .container .left form .inp-box {
+  position: relative;
+}
+#form .container .right form .inp-box i,
+#form .container .left form .inp-box i {
+  position: absolute;
+  top: 9px;
+  font-size: 19px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.forgot-pas:link,
+.forgot-pas:visited {
+  color: gray;
+  font-size: 13px;
+  transition: all 200ms;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.forgot-pas:link:hover,
+.forgot-pas:visited:hover {
+  scale: 1.05;
+}
+
+/*# sourceMappingURL=style.css.map */
